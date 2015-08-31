@@ -1,12 +1,9 @@
-FROM centos:7
+FROM alpine:3.2
 MAINTAINER "Gert Van Gool <gert@vangool.mx>"
 
-RUN yum install -y epel-release && \
-    yum update -y && \
-    yum clean all
+RUN apk add --update ruby ca-certificates && \
+    rm -rf /var/cache/apk/*
 
-RUN yum install -y ruby && \
-    yum clean all 
 RUN gem install --no-document papertrail
 
 ENTRYPOINT ["papertrail"]
