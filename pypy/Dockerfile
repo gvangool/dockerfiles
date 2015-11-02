@@ -12,3 +12,6 @@ RUN wget https://bitbucket.org/squeaky/portable-pypy/downloads/pypy-2.6.1-linux_
 RUN wget https://bootstrap.pypa.io/get-pip.py && \
     pypy get-pip.py && \
     rm -f get-pip.py
+
+WORKDIR /app
+ENTRYPOINT ["/usr/local/bin/pypy"]
