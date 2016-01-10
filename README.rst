@@ -18,4 +18,5 @@ others in separate repositories.
 
 Docker hub links
 ================
-- `papertrail-cli <https://hub.docker.com/r/gvangool/papertrail-cli/>`_
+- `gvangool/papertrail-cli <https://hub.docker.com/r/gvangool/papertrail-cli/>`_
+- `gvangool/php <https://hub.docker.com/r/gvangool/php/>`_
