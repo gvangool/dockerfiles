@@ -15,3 +15,7 @@ others in separate repositories.
   <https://github.com/gvangool/docker-fabric-bolt>`_)
 - `container with a source build of nginx
   <https://github.com/gvangool/docker-nginx-src>`_
+
+Docker hub links
+================
+- `papertrail-cli <https://hub.docker.com/r/gvangool/papertrail-cli/>`_
