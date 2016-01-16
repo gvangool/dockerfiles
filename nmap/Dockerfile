@@ -18,7 +18,6 @@
 FROM alpine:3.3
 MAINTAINER "Gert Van Gool <gert@vangool.mx>"
 
-RUN apk add --update nmap && \
-    rm -rf /var/cache/apk/*
+RUN apk add --no-cache nmap
 
 ENTRYPOINT ["nmap"]
