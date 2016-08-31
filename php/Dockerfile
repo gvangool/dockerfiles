@@ -9,7 +9,7 @@
 FROM alpine:3.4
 MAINTAINER "Gert Van Gool <gert@vangool.mx>"
 
-RUN apk add --no-cache php php-phar ca-certificates wget
+RUN apk add --no-cache php5 php5-phar ca-certificates wget
 RUN wget -O /bin/phpunit.phar https://phar.phpunit.de/phpunit.phar && \
     chmod +x /bin/phpunit.phar
 
