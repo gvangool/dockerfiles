@@ -15,7 +15,7 @@
 #
 #   Nmap done: 1 IP address (1 host up) scanned in 1.87 seconds
 #
-FROM alpine:3.3
+FROM alpine:3.4
 MAINTAINER "Gert Van Gool <gert@vangool.mx>"
 
 RUN apk add --no-cache nmap

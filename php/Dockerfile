@@ -6,7 +6,7 @@
 #
 #   docker run --rm -v $(pwd):/app --workdir /app gvangool/php $@
 #   docker run --rm -v $(pwd):/app --workdir /app --entrypoint phpunit.phar gvangool/php $@
-FROM alpine:3.3
+FROM alpine:3.4
 MAINTAINER "Gert Van Gool <gert@vangool.mx>"
 
 RUN apk add --no-cache php php-phar ca-certificates wget
