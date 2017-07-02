@@ -1,13 +1,7 @@
-FROM centos:7
+FROM alpine:3.6
 LABEL maintainer="Gert Van Gool <gert@vangool.mx>"
 
-RUN yum install -y epel-release && \
-    yum update -y && \
-    yum clean all
-
-RUN yum install -y python{,-setuptools} && \
-    yum clean all && \
-    easy_install pip
+RUN apk add --no-cache python2 py2-pip ca-certificates
 
 RUN pip install krill==0.3.0
 
