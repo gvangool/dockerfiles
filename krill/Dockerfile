@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER Gert Van Gool <gert@vangool.mx>
+LABEL maintainer="Gert Van Gool <gert@vangool.mx>"
 
 RUN yum install -y epel-release && \
     yum update -y && \

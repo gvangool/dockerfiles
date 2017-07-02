@@ -1,5 +1,5 @@
 FROM alpine:3.6
-MAINTAINER "Gert Van Gool <gert@vangool.mx>"
+LABEL maintainer="Gert Van Gool <gert@vangool.mx>"
 
 RUN apk add --no-cache ruby ca-certificates
 # install json gem manually
